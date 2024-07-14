@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+header {
+  display: flex;
+  justify-content: right;
+  z-index: 1;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: right;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+header img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header .header-links {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-right: 200px;
+}
+header .header-links a {
+  text-decoration: none;
+  color: black;
+  z-index: 10;
+  position: relative;
+  transition: all 0.3s ease;
+  font-size: 1.25em;
+  font-weight: lighter;
+  letter-spacing: 3px;
+}
+header .header-links a:visited {
+  color: black;
+}
+header .header-links a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 97%;
+  height: 110%;
+  background-color: aqua;
+  border: 5px solid aqua;
+  border-radius: 10px;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+header .header-links a:hover::before {
+  opacity: 1;
+}
+header .header-links li {
+  list-style-type: none;
+  font-family: "Oswald";
+  background-color: rgb(240, 218, 241);
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+#index-collage {
+  display: flex;
+  justify-content: center;
+}
+#index-collage img {
+  width: 300px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 450px;
+  background-image: url("/Images/footer.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+footer .email-btn {
+  font-family: "Oswald";
+  font-weight: lighter;
+  font-size: 1.5em;
+  padding: 10px 20px;
+  border: none;
+  background-color: aqua;
+  border-radius: 10px;
+  color: black;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+footer .email-btn::after {
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+footer .email-btn:hover::after {
+  opacity: 1;
+}
+footer .email-btn:hover {
+  color: transparent;
+}
+footer #links {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  bottom: 20px;
+}
+footer #links a {
+  text-decoration: none;
+  color: black;
+  z-index: 10;
+  position: relative;
+  transition: all 0.3s ease;
+  font-size: 1.25em;
+  font-weight: lighter;
+  letter-spacing: 3px;
+}
+footer #links a:visited {
+  color: black;
+}
+footer #links a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 97%;
+  height: 110%;
+  background-color: aqua;
+  border: 5px solid aqua;
+  border-radius: 10px;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+footer #links a:hover::before {
+  opacity: 1;
+}
+footer #links a li {
+  list-style-type: none;
+  font-family: "Oswald";
+  background-color: rgb(240, 218, 241);
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#projects img {
+  width: 500px;
+  height: auto;
+}
+#projects p {
+  font-family: "Oswald";
+  font-weight: lighter;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 150px;
+}
+#projects a {
+  background-color: rgb(240, 218, 241);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 30px;
+  text-decoration: none;
+  color: black;
+  z-index: 10;
+  position: absolute;
+  transition: all 0.3s ease;
+  font-size: 1.25em;
+  letter-spacing: 3px;
+}
+#projects a:visited {
+  color: black;
+}
+#projects a::before {
+  content: "";
+  position: absolute;
+  top: 1;
+  left: 2;
+  width: 97%;
+  height: 110%;
+  background-color: aqua;
+  border: 5px solid aqua;
+  border-radius: 10px;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+#projects a:hover::before {
+  opacity: 1;
+}
+
+#artwork {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#artwork img {
+  width: 700px;
+  height: auto;
+}
+#artwork p {
+  font-family: "Oswald";
+  font-weight: lighter;
+}
+
+#illustrations {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+#illustrations img {
+  width: auto;
+  height: 150px;
+}
+
+#illustrations-two {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+#illustrations-two img {
+  width: auto;
+  height: 150px;
+}/*# sourceMappingURL=style.css.map */

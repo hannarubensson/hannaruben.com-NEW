@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+header {
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+    align-items: center;
+    position: relative; 
+    
+    img {
+        object-fit: cover; 
+    }
+
+    .header-links {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        gap: 30px; 
+        margin-right: 200px; 
+
+        
+        a {
+            text-decoration: none;
+            color: black; 
+            z-index: 10; 
+            position: relative;
+            transition: all 0.3s ease; 
+            font-size: 1.25em; 
+            font-weight: lighter; 
+            letter-spacing: 3px; 
+
+            &:visited {
+                color: black; 
+            }
+
+            &::before {
+                content: ''; 
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 97%;
+                height: 110%;
+                background-color: aqua;
+                border: 5px solid aqua;
+                border-radius: 10px; 
+                opacity: 0;
+                z-index: -1; 
+                transition: all 0.3s ease;
+            }
+
+            &:hover::before {
+                opacity: 1;
+            }
+        }
+        
+        li {
+            list-style-type: none; 
+            font-family: 'Oswald';
+            background-color: rgb(240, 218, 241);
+            border-radius: 10px;
+            padding: 10px;
+            border: 1px solid black; 
+        }
+    
+    }
+}
+
+// IMAGE COLLAGE
+
+#index-collage {
+    display: flex;
+    justify-content: center;
+
+    img {
+        width: 300px; 
+    }
+}
+
+
+// FOOTER
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+    width: 100%;
+    height: 450px; 
+    background-image: url('/Images/footer.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+.email-btn {
+    font-family: 'Oswald';
+    font-weight: lighter;
+    font-size: 1.5em;
+    padding: 10px 20px;
+    border: none;
+    background-color: aqua; 
+    border-radius:10px; 
+    color: black; 
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+    .email-btn::after {
+        color: black; 
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .email-btn:hover::after {
+        opacity: 1;
+    }
+
+    .email-btn:hover {
+        color: transparent;
+}
+
+    #links  {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        gap: 30px; 
+        bottom: 20px; 
+
+        a {
+            text-decoration: none;
+            color: black; 
+            z-index: 10; 
+            position: relative;
+            transition: all 0.3s ease; 
+            font-size: 1.25em; 
+            font-weight: lighter; 
+            letter-spacing: 3px; 
+
+
+            &:visited {
+                color: black; 
+            }
+
+            &::before {
+                content: ''; 
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 97%;
+                height: 110%;
+                background-color: aqua;
+                border: 5px solid aqua;
+                border-radius: 10px; 
+                opacity: 0;
+                z-index: -1; 
+                transition: all 0.3s ease;
+            }
+
+            &:hover::before {
+                opacity: 1;
+            }
+        li {
+            list-style-type: none; 
+            font-family: 'Oswald';
+            background-color: rgb(240, 218, 241);
+            border-radius: 10px;
+            padding: 10px;
+            border: 1px solid black; 
+        }
+
+    }
+
+}
+}

@@ -1,0 +1,42 @@
+
+
+// ADD NEW ARTWORK HERE
+
+#artwork {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    img {
+        width: 700px; 
+        height: auto;
+    }
+
+    p {
+        font-family: 'Oswald';
+        font-weight: lighter; 
+    }
+}
+
+#illustrations {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+
+    img {
+        width: auto; 
+        height: 150px
+    }
+}
+
+#illustrations-two {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    img {
+        width: auto;
+        height: 150px; 
+    }
+}
