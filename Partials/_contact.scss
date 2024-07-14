@@ -1,0 +1,92 @@
+
+#contact-info  {
+        margin: 100px; 
+        position: relative;
+        gap: 30px; 
+        bottom: 20px; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px; 
+
+        }
+
+        a {
+            text-decoration: none;
+            color: black; 
+            z-index: 10; 
+            position: relative;
+            transition: all 0.3s ease; 
+            font-size: 1.25em; 
+            font-weight: lighter; 
+            letter-spacing: 3px; 
+
+
+            &:visited {
+                color: black; 
+            }
+
+            &::before {
+                content: ''; 
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 97%;
+                height: 110%;
+                background-color: aqua;
+                border: 5px solid aqua;
+                border-radius: 10px; 
+                opacity: 0;
+                z-index: -1; 
+                transition: all 0.3s ease;
+            }
+
+            &:hover::before {
+                opacity: 1;
+            }
+
+        li {
+            list-style-type: none; 
+            font-family: 'Oswald';
+            background-color: rgb(240, 218, 241);
+            border-radius: 10px;
+            padding: 10px;
+            border: 1px solid black; 
+        }
+    }
+
+}
+
+
+.email-container {
+    font-family: 'Oswald';
+    font-weight: lighter;
+    font-size: 1.5em;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.email-text {
+    display: inline-block;
+    animation: typing 6s steps(35, end) infinite;
+    white-space: nowrap;
+    overflow: hidden; 
+    width: 0;
+}
+
+.email-container:hover .email-text {
+     animation-play-state: paused;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
